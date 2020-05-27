@@ -1,0 +1,18 @@
+
+<%= form_for @conn, @action, fn f -> %>
+  <%= label f, :rooms_in_house, "Rooms in house: "%>
+  <%= text_input f, :rooms_in_house %>
+
+  <%= label f, :dist, "Distance center: "%>
+  <%= text_input f, :dist %>
+
+  <%= label f, :floor_in_house, "Floor: "%>
+  <%= text_input f, :floor_in_house %>
+
+  <%= label f, :surface, "Apartment Area (m): "%>
+  <%= text_input f, :surface %>
+
+  <div>
+    <%= submit "Predict" %>
+  </div>
+<% end %>
